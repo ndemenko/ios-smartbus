@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="11759" systemVersion="16D32" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="CityEntity" representedClassName=".CityEntity" syncable="YES">
+        <attribute name="highlight" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="TripEntity" representedClassName=".TripEntity" syncable="YES">
+        <attribute name="bus_id" optional="YES" attributeType="Integer 32" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="from_date" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="from_info" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="Integer 32" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="info" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="price" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="reservation_count" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="to_date" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="to_info" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="fromCity" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="CityEntity" syncable="YES"/>
+        <relationship name="toCity" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="CityEntity" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="CityEntity" positionX="-90" positionY="117" width="128" height="90"/>
+        <element name="TripEntity" positionX="-263" positionY="-135" width="128" height="208"/>
+    </elements>
+</model>

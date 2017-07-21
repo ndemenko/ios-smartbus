@@ -1,0 +1,476 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3855A59445A39B80D64A7206 /* Pods_SmartBus.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 013C2058A9A6560104CFD043 /* Pods_SmartBus.framework */; };
+		840326281E8921B1001A98B3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840326271E8921B1001A98B3 /* AppDelegate.swift */; };
+		8403262D1E8921B1001A98B3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8403262B1E8921B1001A98B3 /* Main.storyboard */; };
+		8403262F1E8921B1001A98B3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8403262E1E8921B1001A98B3 /* Assets.xcassets */; };
+		840326321E8921B1001A98B3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 840326301E8921B1001A98B3 /* LaunchScreen.storyboard */; };
+		8410B7371E8EB6420010789E /* NetworkUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8410B7361E8EB6420010789E /* NetworkUtils.swift */; };
+		8410B7401E8EB6520010789E /* CityEntity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8410B7381E8EB6520010789E /* CityEntity+CoreDataClass.swift */; };
+		8410B7411E8EB6520010789E /* CityEntity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8410B7391E8EB6520010789E /* CityEntity+CoreDataProperties.swift */; };
+		8410B7421E8EB6520010789E /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8410B73A1E8EB6520010789E /* CoreDataManager.swift */; };
+		8410B7431E8EB6520010789E /* DataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8410B73B1E8EB6520010789E /* DataProvider.swift */; };
+		8410B7441E8EB6520010789E /* TripEntity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8410B73C1E8EB6520010789E /* TripEntity+CoreDataClass.swift */; };
+		8410B7451E8EB6520010789E /* TripEntity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8410B73D1E8EB6520010789E /* TripEntity+CoreDataProperties.swift */; };
+		8410B7461E8EB6520010789E /* TripModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8410B73E1E8EB6520010789E /* TripModel.xcdatamodeld */; };
+		8410B74B1E8EB65D0010789E /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8410B7471E8EB65D0010789E /* DetailViewController.swift */; };
+		8410B74C1E8EB65D0010789E /* TripCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8410B7481E8EB65D0010789E /* TripCell.swift */; };
+		8410B74D1E8EB65D0010789E /* TripsDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8410B7491E8EB65D0010789E /* TripsDataSource.swift */; };
+		8410B74E1E8EB65D0010789E /* TripsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8410B74A1E8EB65D0010789E /* TripsViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		013C2058A9A6560104CFD043 /* Pods_SmartBus.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SmartBus.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		727B5E1158D410BCC126815F /* Pods-SmartBus.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartBus.release.xcconfig"; path = "Pods/Target Support Files/Pods-SmartBus/Pods-SmartBus.release.xcconfig"; sourceTree = "<group>"; };
+		840326241E8921B1001A98B3 /* SmartBus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartBus.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		840326271E8921B1001A98B3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8403262C1E8921B1001A98B3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8403262E1E8921B1001A98B3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		840326311E8921B1001A98B3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		840326331E8921B1001A98B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8410B7361E8EB6420010789E /* NetworkUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NetworkUtils.swift; path = utils/NetworkUtils.swift; sourceTree = "<group>"; };
+		8410B7381E8EB6520010789E /* CityEntity+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "CityEntity+CoreDataClass.swift"; path = "model/CityEntity+CoreDataClass.swift"; sourceTree = "<group>"; };
+		8410B7391E8EB6520010789E /* CityEntity+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "CityEntity+CoreDataProperties.swift"; path = "model/CityEntity+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		8410B73A1E8EB6520010789E /* CoreDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CoreDataManager.swift; path = model/CoreDataManager.swift; sourceTree = "<group>"; };
+		8410B73B1E8EB6520010789E /* DataProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DataProvider.swift; path = model/DataProvider.swift; sourceTree = "<group>"; };
+		8410B73C1E8EB6520010789E /* TripEntity+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "TripEntity+CoreDataClass.swift"; path = "model/TripEntity+CoreDataClass.swift"; sourceTree = "<group>"; };
+		8410B73D1E8EB6520010789E /* TripEntity+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "TripEntity+CoreDataProperties.swift"; path = "model/TripEntity+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		8410B73F1E8EB6520010789E /* TripModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TripModel.xcdatamodel; sourceTree = "<group>"; };
+		8410B7471E8EB65D0010789E /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DetailViewController.swift; path = ui/DetailViewController.swift; sourceTree = "<group>"; };
+		8410B7481E8EB65D0010789E /* TripCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TripCell.swift; path = ui/TripCell.swift; sourceTree = "<group>"; };
+		8410B7491E8EB65D0010789E /* TripsDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TripsDataSource.swift; path = ui/TripsDataSource.swift; sourceTree = "<group>"; };
+		8410B74A1E8EB65D0010789E /* TripsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TripsViewController.swift; path = ui/TripsViewController.swift; sourceTree = "<group>"; };
+		846FD9EF1E892D14008E8337 /* SmartBus-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SmartBus-Bridging-Header.h"; sourceTree = "<group>"; };
+		8E54FF7F4E8A9D4DD2442CD2 /* Pods-SmartBus.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartBus.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SmartBus/Pods-SmartBus.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		840326211E8921B1001A98B3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3855A59445A39B80D64A7206 /* Pods_SmartBus.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		50464B2129584D75D216D63F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8E54FF7F4E8A9D4DD2442CD2 /* Pods-SmartBus.debug.xcconfig */,
+				727B5E1158D410BCC126815F /* Pods-SmartBus.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		8403261B1E8921B1001A98B3 = {
+			isa = PBXGroup;
+			children = (
+				840326261E8921B1001A98B3 /* SmartBus */,
+				840326251E8921B1001A98B3 /* Products */,
+				50464B2129584D75D216D63F /* Pods */,
+				9A616961FCE96E62CEA5C1C5 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		840326251E8921B1001A98B3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				840326241E8921B1001A98B3 /* SmartBus.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		840326261E8921B1001A98B3 /* SmartBus */ = {
+			isa = PBXGroup;
+			children = (
+				84F90FA01E8CE19300EF8BC7 /* utils */,
+				84F195431E8A9A3F00FE34C3 /* model */,
+				84F195421E8A99E200FE34C3 /* ui */,
+				840326271E8921B1001A98B3 /* AppDelegate.swift */,
+				8403262E1E8921B1001A98B3 /* Assets.xcassets */,
+				840326331E8921B1001A98B3 /* Info.plist */,
+				846FD9EF1E892D14008E8337 /* SmartBus-Bridging-Header.h */,
+			);
+			path = SmartBus;
+			sourceTree = "<group>";
+		};
+		84F195421E8A99E200FE34C3 /* ui */ = {
+			isa = PBXGroup;
+			children = (
+				8410B7471E8EB65D0010789E /* DetailViewController.swift */,
+				8410B7481E8EB65D0010789E /* TripCell.swift */,
+				8410B7491E8EB65D0010789E /* TripsDataSource.swift */,
+				8410B74A1E8EB65D0010789E /* TripsViewController.swift */,
+				8403262B1E8921B1001A98B3 /* Main.storyboard */,
+				840326301E8921B1001A98B3 /* LaunchScreen.storyboard */,
+			);
+			name = ui;
+			sourceTree = "<group>";
+		};
+		84F195431E8A9A3F00FE34C3 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				8410B7381E8EB6520010789E /* CityEntity+CoreDataClass.swift */,
+				8410B7391E8EB6520010789E /* CityEntity+CoreDataProperties.swift */,
+				8410B73A1E8EB6520010789E /* CoreDataManager.swift */,
+				8410B73B1E8EB6520010789E /* DataProvider.swift */,
+				8410B73C1E8EB6520010789E /* TripEntity+CoreDataClass.swift */,
+				8410B73D1E8EB6520010789E /* TripEntity+CoreDataProperties.swift */,
+				8410B73E1E8EB6520010789E /* TripModel.xcdatamodeld */,
+			);
+			name = model;
+			sourceTree = "<group>";
+		};
+		84F90FA01E8CE19300EF8BC7 /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				8410B7361E8EB6420010789E /* NetworkUtils.swift */,
+			);
+			name = utils;
+			sourceTree = "<group>";
+		};
+		9A616961FCE96E62CEA5C1C5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				013C2058A9A6560104CFD043 /* Pods_SmartBus.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		840326231E8921B1001A98B3 /* SmartBus */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 840326361E8921B1001A98B3 /* Build configuration list for PBXNativeTarget "SmartBus" */;
+			buildPhases = (
+				57F750AF5000002AE4AF62E1 /* [CP] Check Pods Manifest.lock */,
+				840326201E8921B1001A98B3 /* Sources */,
+				840326211E8921B1001A98B3 /* Frameworks */,
+				840326221E8921B1001A98B3 /* Resources */,
+				0624F5D38862F0179401F713 /* [CP] Embed Pods Frameworks */,
+				197639751CBAA2B2B3E091C5 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SmartBus;
+			productName = SmartBus;
+			productReference = 840326241E8921B1001A98B3 /* SmartBus.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8403261C1E8921B1001A98B3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = admin;
+				TargetAttributes = {
+					840326231E8921B1001A98B3 = {
+						CreatedOnToolsVersion = 8.2.1;
+						LastSwiftMigration = 0820;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 8403261F1E8921B1001A98B3 /* Build configuration list for PBXProject "SmartBus" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8403261B1E8921B1001A98B3;
+			productRefGroup = 840326251E8921B1001A98B3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				840326231E8921B1001A98B3 /* SmartBus */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		840326221E8921B1001A98B3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				840326321E8921B1001A98B3 /* LaunchScreen.storyboard in Resources */,
+				8403262F1E8921B1001A98B3 /* Assets.xcassets in Resources */,
+				8403262D1E8921B1001A98B3 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0624F5D38862F0179401F713 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SmartBus/Pods-SmartBus-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		197639751CBAA2B2B3E091C5 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SmartBus/Pods-SmartBus-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		57F750AF5000002AE4AF62E1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		840326201E8921B1001A98B3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8410B7431E8EB6520010789E /* DataProvider.swift in Sources */,
+				8410B74D1E8EB65D0010789E /* TripsDataSource.swift in Sources */,
+				8410B7441E8EB6520010789E /* TripEntity+CoreDataClass.swift in Sources */,
+				8410B7401E8EB6520010789E /* CityEntity+CoreDataClass.swift in Sources */,
+				8410B7461E8EB6520010789E /* TripModel.xcdatamodeld in Sources */,
+				8410B7371E8EB6420010789E /* NetworkUtils.swift in Sources */,
+				8410B74E1E8EB65D0010789E /* TripsViewController.swift in Sources */,
+				8410B74C1E8EB65D0010789E /* TripCell.swift in Sources */,
+				840326281E8921B1001A98B3 /* AppDelegate.swift in Sources */,
+				8410B7451E8EB6520010789E /* TripEntity+CoreDataProperties.swift in Sources */,
+				8410B74B1E8EB65D0010789E /* DetailViewController.swift in Sources */,
+				8410B7421E8EB6520010789E /* CoreDataManager.swift in Sources */,
+				8410B7411E8EB6520010789E /* CityEntity+CoreDataProperties.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		8403262B1E8921B1001A98B3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8403262C1E8921B1001A98B3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		840326301E8921B1001A98B3 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				840326311E8921B1001A98B3 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		840326341E8921B1001A98B3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		840326351E8921B1001A98B3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		840326371E8921B1001A98B3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8E54FF7F4E8A9D4DD2442CD2 /* Pods-SmartBus.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = SmartBus/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = gmoby.SmartBus;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SmartBus/SmartBus-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		840326381E8921B1001A98B3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 727B5E1158D410BCC126815F /* Pods-SmartBus.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = SmartBus/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = gmoby.SmartBus;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SmartBus/SmartBus-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8403261F1E8921B1001A98B3 /* Build configuration list for PBXProject "SmartBus" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				840326341E8921B1001A98B3 /* Debug */,
+				840326351E8921B1001A98B3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		840326361E8921B1001A98B3 /* Build configuration list for PBXNativeTarget "SmartBus" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				840326371E8921B1001A98B3 /* Debug */,
+				840326381E8921B1001A98B3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		8410B73E1E8EB6520010789E /* TripModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				8410B73F1E8EB6520010789E /* TripModel.xcdatamodel */,
+			);
+			currentVersion = 8410B73F1E8EB6520010789E /* TripModel.xcdatamodel */;
+			name = TripModel.xcdatamodeld;
+			path = model/TripModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 8403261C1E8921B1001A98B3 /* Project object */;
+}
